@@ -29,7 +29,7 @@ app.use('/', router);
 
 // Now, start the server
 // Listen either on the port Heroku gives us, or on 8080 if we are running on localhost. 
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 8080
 
 // Start our app's listening on either port 8080 or the port that heroku gave us
 app.listen(PORT, function() {
