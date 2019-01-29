@@ -17,4 +17,4 @@ This is a web app that lets users view and leave comments on the latest news fro
   2. Users are able to leave comments on the articles displayed and revisit them later. The users can delete comments left on articles. All stored comments should be visible to every user.
 
 ## DEMO SITE
-A live version of the site is here: 
+A live version of the site is here: https://washingtonpostnewscraper.herokuapp.com/articles
