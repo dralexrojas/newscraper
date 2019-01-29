@@ -4,14 +4,12 @@ var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
 // Using the Schema constructor, create a new UserSchema object
-// This is similar to a Sequelize model
 var ArticleSchema = new Schema({
-  // `title` is required and of type String
+ 
   title: {
     type: String,
     required: true
   },
-  // `link` is required and of type String
   link: {
     type: String,
     required: true
@@ -22,7 +20,7 @@ var ArticleSchema = new Schema({
   },
   img: {
     type: String,
-    default: "/assets/images/bar-img-unavailable.png"
+    default: "/assets/images/wplogo.jpeg"
   },
   issaved: {
     type: Boolean,
@@ -36,18 +34,14 @@ var ArticleSchema = new Schema({
     type: Date,
     default: Date.now
   },
-  // `notes` is an object that stores Note ids
-  // The ref property links the ObjectId to the Note model
-  // This allows us to populate the Article with an associated Note
+
   notes: [{
     type: Schema.Types.ObjectId,
     ref: "Note"
   }]
 });
 
-ArticleSchema.index({title: "text"}); //Create our key
-
-// This creates our model from the above schema, using mongoose's model method
+ArticleSchema.index({title: "text"});
 var Article = mongoose.model("Article", ArticleSchema);
 
 // Export the Article model

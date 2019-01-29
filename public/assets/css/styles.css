@@ -3,7 +3,8 @@ html {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+	background-size: cover;
+	font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
 }
 
 body {
@@ -30,7 +31,19 @@ body {
 	  margin-left: 25px;
 	}
 
-	.wplogo {
-		margin-top: 7px;
-		margin-right: 7px;
+	.image1 {
+		margin-top: 2px;
+		height: 60px;
+		width: 500px;
 	}
+ 
+ @media only screen and (max-width: 500px){
+	 .image1 {
+			display: none;
+		}
+ }
+
+ .nav-wrapper{
+	 padding-left: 20px;
+	 padding-right: 20px;
+ }

@@ -24,17 +24,16 @@ $(document).ready(function(){
       data: frm.serialize(),
     })
     .done(function() {
-      // and refresh the window after the call has completed
+    
       location.reload();
     });
     
-    // prevent default behavior
     return false;
 
   });
 
 
-  // this is the click listener to delete a comment
+  // delete a comment
   $('.delete-comment-button').on('click', function(){
     console.log("in delete comment logic");
     // Get the id of comment to be deleted
@@ -49,11 +48,10 @@ $(document).ready(function(){
       type: 'POST',
     })
     .done(function() {
-      // and refresh the window after the call has completed
+    
       location.reload();
     });
-    
-    // prevent default behavior
+
     return false;
 
   });
