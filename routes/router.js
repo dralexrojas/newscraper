@@ -13,14 +13,14 @@ var Article = require("../models/article.js");
 var cheerio = require("cheerio");
 var request = require("request");
 
+// Connect to the Mongo DB
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/newscraper";
 
-// Connect to the Mongo DB
-mongoose.Promise = Promise;
-//mongoose.connect("mongodb://localhost/newscraper", { useNewUrlParser: true });
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
-
 mongoose.connect(MONGODB_URI);
+
+// // Connect to the Mongo DB
+// mongoose.Promise = Promise;
+// mongoose.connect("mongodb://localhost/newscraper", { useNewUrlParser: true });
 
 const db = mongoose.connection;
 
