@@ -1,0 +1,36 @@
+html { 
+  background: url(../images/background.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+  }
+  
+  main {
+	flex: 1 0 auto;
+  }
+  .message {
+	  width: 100%;
+	  border-radius: 5px;
+	  box-shadow: 0 0 10px #aaa;
+	  margin: auto;
+	  text-align: center;
+	  padding: 40px 90px;
+	  color: #aaa;
+	  background-color: #fff;
+  }
+  
+  .instructions {
+	  margin-left: 25px;
+	}
+
+	.wplogo {
+		margin-top: 7px;
+		margin-right: 7px;
+	}

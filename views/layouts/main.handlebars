@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Tab Title -->
+    <title>Washington Post Scraper</title>
+    <!-- View Port Size Responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Compiled and minified CSS for Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <!-- Materialize - Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+  </head>
+
+  <body>
+  
+     <!-- Fixed Nav Bar -->
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper grey darken-3">
+          <a href="/scrape" class="brand-logo white-text"><i class="material-icons">update</i> <img src="/assets/images/wplogo.jpeg" class="wplogo" height="50" width="50">Washinton Post News Scraper</a>
+          <a href="" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="https://www.washingtonpost.com/" target="_new">Washington Post Website</a></li>
+            <li><a href="https://github.com/dralexrojas/newscraper.git" target="_new">Github Project Repo</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- For Mobile Nav Bar -->
+    <ul class="side-nav darken-3" id="mobile-demo">
+      <li><a href="https://www.washingtonpost.com/" target="_new">Washington Post</a></li>
+      <li><a href="https://github.com/dralexrojas/newscraper.git" target="_new">Github Repo</a></li>
+    </ul>
+
+
+
+    <!-- Page Content -->
+    <main> 
+
+      <!-- Site Info Container -->
+      <div class="container">
+        <ul class="collection with-header z-depth-3">
+          <li class="collection-header blue-grey lighten-3 blue-grey-text text-darken-4"><h4><b>The Washington Post News Scraper</b></h4></li>
+        </ul>
+        <ul class="collection with-header z-depth-3">
+          <li>
+              <div class="collection-header blue-grey lighten-3 blue-grey-text text-darken-4 z-depth-3"><b>Stay up to date with the Washington Post.</b>
+              </div>
+              </ul>
+              </div>
+          </li>
+        </ul>
+
+      </div>
+
+      <!-- Render All Articles -->
+      <div class="container">
+        {{{body}}}
+      </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="page-footer grey darken-3">
+      <div class="footer-copyright">
+        <div class="container">
+        MongoDB NewScraper</a>
+        </div>
+      </div>
+    </footer>
+
+
+
+    <!-- Link in jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+    <!-- Materialize - Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+    <!-- Custom JavaScript to respond to the buttons -->
+    <script type="text/javascript" src="assets/js/app.js"></script>
+    
+  </body>
+
+</html>
