@@ -17,7 +17,10 @@ var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/newscraper";
 
 // Connect to the Mongo DB
 mongoose.Promise = Promise;
-mongoose.connect("mongodb://localhost/newscraper", { useNewUrlParser: true });
+//mongoose.connect("mongodb://localhost/newscraper", { useNewUrlParser: true });
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+
+mongoose.connect(MONGODB_URI);
 
 const db = mongoose.connection;
 
